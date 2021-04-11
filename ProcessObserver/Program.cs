@@ -26,6 +26,10 @@ namespace ProcessObserver
             _timer.Enabled = true;
             while (true)
             {
+                if (!_pipe.IsConnected)
+                {
+                    break;
+                }
                 Thread.Sleep(2000);
             }
         }

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveProcessMonitor", "Act
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessObserver", "ProcessObserver\ProcessObserver.csproj", "{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessObserverTests", "ProcessObserverTests\ProcessObserverTests.csproj", "{018C4840-5CB0-4A15-AC00-9008CCF84D98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018C4840-5CB0-4A15-AC00-9008CCF84D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018C4840-5CB0-4A15-AC00-9008CCF84D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018C4840-5CB0-4A15-AC00-9008CCF84D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018C4840-5CB0-4A15-AC00-9008CCF84D98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

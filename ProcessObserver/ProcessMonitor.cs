@@ -9,7 +9,7 @@ namespace ProcessObserver
     {
         private Dictionary<int, Process> _processes = new Dictionary<int, Process>();
         private Dictionary<int, Process> _newProcesses = new Dictionary<int, Process>();
-        private Dictionary<int, Process> _inactiveProcesses = new Dictionary<int, Process>();
+        public Dictionary<int, Process> _inactiveProcesses = new Dictionary<int, Process>();
         private List<CustomProcess> _updatedProcesses = new List<CustomProcess>();
 
         public List<CustomProcess> UpdatedProcesses { get => _updatedProcesses; }
