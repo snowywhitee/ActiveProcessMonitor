@@ -1,0 +1,82 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ActiveProcessMonitor.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="610"
+        x:Class="ActiveProcessMonitor.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ActiveProcessMonitor">
+    
+    <Window.Styles>
+        <Style Selector="Window">
+            <Setter Property="MinWidth" Value="960"/>
+            <Setter Property="MinHeight" Value="610"/>
+            <Setter Property="Background" Value="#1ff2d7d5"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+    </Window.Styles>
+    
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <StackPanel>
+        <StackPanel.Styles>
+            <Style Selector="DataGrid">
+                <Setter Property="AlternatingRowBackground" Value="WhiteSmoke"/>
+                <Setter Property="RowBackground" Value="White"/>
+                <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+                <Setter Property="BorderBrush" Value="Gainsboro"/>
+                <Setter Property="MinHeight" Value="475"/>
+            </Style>
+            <Style Selector="DataGridColumnHeader">
+                <Setter Property="SeparatorBrush" Value="Gainsboro"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+            <Style Selector="DataGridCell">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+        </StackPanel.Styles>
+        <Grid RowDefinitions="20, 475, 115">
+            <DataGrid Grid.Row="1"
+                      IsReadOnly="True"
+                      Items="{Binding Processes}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="PID" Width="*" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Process Name" Width="*" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Threads" Width="*" Binding="{Binding ThreadCount}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Grid.Row="2">
+                <StackPanel>
+                    <StackPanel.Styles>
+                        <Style Selector="StackPanel">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Height" Value="60"/>
+                            <Setter Property="Width" Value="390"/>
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center"/>
+                            <Setter Property="Margin" Value="10"/>
+                        </Style>
+                    </StackPanel.Styles>
+                    <Border Background="White"
+                            BorderBrush="Gainsboro"
+                            BorderThickness="1"
+                            CornerRadius="3"
+                            Padding="4">
+                        <Grid ColumnDefinitions="5,*,*,5"
+                              RowDefinitions="5,25,25,5">
+                            <Label Grid.Column="1" Grid.Row="1" Content="Processes:"/>
+                            <Label Grid.Column="2" Grid.Row="1" Content="{Binding InfoSource[0]}"/>
+                            <Label Grid.Column="1" Grid.Row="2" Content="Threads:"/>
+                            <Label Grid.Column="2" Grid.Row="2" Content="{Binding InfoSource[2]}"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+    
+</Window>

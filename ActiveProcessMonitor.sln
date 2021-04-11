@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveProcessMonitor", "ActiveProcessMonitor\ActiveProcessMonitor.csproj", "{BB272E54-1954-4339-A855-E32763E54980}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessObserver", "ProcessObserver\ProcessObserver.csproj", "{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB272E54-1954-4339-A855-E32763E54980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB272E54-1954-4339-A855-E32763E54980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB272E54-1954-4339-A855-E32763E54980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB272E54-1954-4339-A855-E32763E54980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC2ECBB-2C3D-4C26-8E3C-4336BBBAC4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
