@@ -8,14 +8,14 @@
   <summary>Содержание</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Про проект</a>
+      <a href="#про-проект">Про проект</a>
       <ul>
-        <li><a href="#implemented-functionality">Реализованный Функционал</a></li>
-        <li><a href="#built-with">Используемые пакеты/дополнения</a></li>
-        <li><a href="#structure">Структура Проекта</a></li>
+        <li><a href="#реализованный-функционал">Реализованный Функционал</a></li>
+        <li><a href="#используемые-пакеты">Используемые пакеты</a></li>
+        <li><a href="#структура-проекта">Структура Проекта</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Использование</a></li>
+    <li><a href="#использование">Использование</a></li>
   </ol>
 </details>
 
@@ -44,7 +44,7 @@
 * Вся информация о процессах берется из System.Diagnostics.Process.GetProcesses().
 
 
-### Используемые пакеты/дополнения
+### Используемые пакеты
 
 * [AvaloniaUI](https://github.com/AvaloniaUI/Avalonia) Для UI
 
@@ -59,10 +59,6 @@
 
 Вид UI:
 
-![alt text](screenshots/Home.png "Home/Index")
-![alt text](screenshots/Encrypt.png "Action/Encrypt")
-![alt text](screenshots/Decrypt.png "Action/Decrypt")
-![alt text](screenshots/Text.png "Action/Text")
-![alt text](screenshots/Result.png "Action/Result")
-![alt text](screenshots/Download.png "Action/Download")
+![alt text](MainWindow1.png "Main Window")
+![alt text](MainWindow2.png "Main Window")
 
